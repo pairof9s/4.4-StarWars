@@ -3,13 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>4 4 StarWars</title>
+    <title>D9 4.4 StarWars</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="well">Star Wars Planet Travels</h1>
+          <h2>Check the climate conditions:</h2>
 
-    <h1>Hello World!</h1>
+          <ul class="js-planet-list"><h4></h4></ul>
 
+          <button type="button" name="planets" class="js-planets-button btn btn-primary">Get Planets</button>
+
+        </div>
+      </div>
+    </div>
+
+    <script id="planet-list-item-template" type="text/x-handlebars-template">
+      <li id="{{name}}">{{name}}</li>
+    </script>
     <script src="js/bundle.js"></script>
   </body>
 </html>
